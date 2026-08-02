@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InmoGest 2.0</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <h2>🏠 InmoGest</h2>
+      <nav>
+        <button data-view="dashboard" class="active">📊 Dashboard</button>
+        <button data-view="propietarios">🧑‍🤝‍🧑 Propietarios</button>
+        <button data-view="propiedades">🏠 Propiedades</button>
+        <button data-view="inquilinos">👤 Inquilinos</button>
+        <button data-view="contratos">📄 Contratos</button>
+        <button data-view="impuestos">💰 Impuestos</button>
+        <button data-view="servicios">⚡ Servicios</button>
+        <button data-view="cobranzas">💳 Cobranzas</button>
+        <button data-view="liquidaciones">📑 Liquidaciones</button>
+        <button data-view="reportes">📈 Reportes</button>
+        <button data-view="agenda">🗓️ Agenda</button>
+        <button data-view="crm">💼 CRM</button>
+      </nav>
+    </aside>
+
+    <main id="contenido"></main>
+  </div>
+
+  <!-- ORDEN IMPORTANTE: supabase primero, luego módulos, app.js al final -->
+  <script src="js/supabase.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/propietarios.js"></script>
+  <script src="js/propiedades.js"></script>
+  <script src="js/inquilinos.js"></script>
+  <script src="js/contratos.js"></script>
+  <script src="js/impuestos.js"></script>
+  <script src="js/servicios.js"></script>
+  <script src="js/cobranzas.js"></script>
+  <script src="js/liquidaciones.js"></script>
+  <script src="js/reportes.js"></script>
+  <script src="js/agenda.js"></script>
+  <script src="js/crm.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

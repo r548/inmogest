@@ -1,0 +1,35 @@
+/* InmoGest 2.0 — responsive */
+@media (max-width: 720px) {
+  #app { flex-direction: column; }
+
+  .sidebar {
+    width: 100%;
+    padding: 0;
+  }
+
+  .sidebar h2 { padding: 12px 16px; margin: 0; border-bottom: none; }
+
+  .sidebar nav {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .sidebar nav button {
+    white-space: nowrap;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    padding: 12px 14px;
+  }
+
+  .sidebar nav button.active { border-left: none; border-bottom-color: #0f9d77; }
+
+  .page { padding: 18px 16px 48px; }
+
+  .cards { grid-template-columns: repeat(2, 1fr); }
+
+  .tabla { display: block; overflow-x: auto; white-space: nowrap; }
+}
+
+@media (max-width: 420px) {
+  .cards { grid-template-columns: 1fr; }
+}
